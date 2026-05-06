@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Importacion de fuentes*/
+        @font-face {
+            font-family: 'Inter';
+            src: url("inter/Inter-Italic.ttf") format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+                @font-face {
+            font-family: 'Inter';
+            src: url("inter/Inter-Italic.ttf") format('truetype');
+            font-weight: 700;
+            font-style: bold;
+            font-display: swap;
+        }
+
+        /*reseteto de estilo */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /*body*/
+        body{
+            background-color: lightgrey;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /*bem: bloque (contenedor
+        elemento 
+        modificador)
+        */
+
+        .card{
+
+            width: 300px;
+            height: auto;
+            background-color: white;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            /* https://smoothshadows.com/#djEsMSwyLDAuMzUsNjAsMzIsMCwjMDMwNzEyLCNmM2Y0ZjYsI2ZmZmZmZiwy */
+            box-shadow: 0px 8px 10px rgba(3, 7, 18, 0.17), 0px 32px 60px rgba(3, 7, 18, 0.35);
+            border-radius: 15px;
+        }
+        .card__empresa{
+            width: auto;
+            height: 90px;
+            background-color: #3e3e40;
+            border-top-left-radius: 15px;
+            border-top-right-radius:15px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .card__flag{
+            background-color: #76C4C4;
+            width: auto;
+            height: 60px;
+        }
+        .card__retrato{
+            width: 150px;
+            height: 150px; 
+            display: block;
+            /*Distorsión*/
+            object-fit: cover;
+            /*Posicionamiento*/
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -100px;
+            /*Borde*/
+            border-radius: 50%;
+            border: white solid 5px;
+
+        }
+        .card__nombre{
+            text-align: center;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 20px;
+            /*Espaciar las letras*/
+            letter-spacing: 3px;
+        }
+        .card__nombre--negrita{
+            font-weight: bold;
+        }
+        .card__profesion{
+            text-align: center;
+            margin-top: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 10px;
+            /*Espaciar las letras*/
+            letter-spacing: 3px;
+            color:#76C4C4 ;
+        }
+        .card__tabla{
+            font-size: 12px;
+            width: 200px;
+            /*centrado*/
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+
+        .card__tabla--atributo{
+            font-weight: #76C4C4;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+
+        <div class="card__empresa">SENA CGMLTI</div>
+        <div class="card__flag"><!--Flag(turquesa)--></div>
+        <!--Retrato-->
+        <img class="card__retrato" 
+             src="retrato.png" 
+             alt="retrato">
+    <!--Nombre-->
+        <div class="card__nombre">Derly 
+            <span class="card__nombre--negrita">Maday</span></div>
+        <div class="card__profesion">
+            <!--profesion-->
+            Web Desing & Developer 
+        </div>
+        <table class="card__tabla">
+            <tr>
+                <td class=".card__tabla--atributo">ID</td>
+                <td>12345</td>
+            </tr>
+            <tr>
+                <td>Documento</td>
+                <td>2424225262</td>
+            </tr>
+            <tr>
+                <td>correo</td>
+                <td>aprendiz@sena.edu.co</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>
