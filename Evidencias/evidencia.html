@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #cfcaca;
+            font-family: 'Sora', sans-serif;
+        }
+
+        /* Contenedor principal con degradado */
+        .card {
+            padding: 20px;
+            background: linear-gradient(180deg, #4c1d95 0%, #6d28d9 100%);
+            border-radius: 28px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        /* Marco interior claro */
+        .inner-frame {
+            background: #e5e5e5;
+            padding: 2px;
+            border: 8px solid #f59e0b;
+            border-radius: 20px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Área de la foto corregida */
+        .photo-area {
+            width: 100%;
+            height: 250px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .photo-area img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Área de información fuera de la foto para mejor legibilidad */
+        .info-area {
+            background: #3f3f46;
+            border-radius: 1px;
+            padding: 20px 15px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .name {
+            color: #fbbf24;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .bio {
+            color: #e5e7eb;
+            font-size: 13px;
+            line-height: 1.5;
+            margin-bottom: 18px;
+        }
+
+        .follow-btn {
+            background: #f59e0b;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 8px;
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .follow-btn:hover {
+            background: #ea580c;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="inner-frame">
+            <div class="photo-area">
+                <!-- Imagen de ejemplo funcional -->
+                <img src="nigger.jpg" alt="Samuel Techton">
+            </div>
+            <div class="info-area">
+                <div class="name">Samuel Techton</div>
+                <div class="bio">
+                    Software engineer with a knack for problem-solving, I thrive on coding challenges and crafting elegant solutions.
+                </div>
+                <button class="follow-btn">Follow</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
